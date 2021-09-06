@@ -31,8 +31,7 @@ class GroupAdmin extends AbstractAdmin
     /**
      * {@inheritdoc}
      */
-    public function getNewInstance()
-    {
+    protected function createNewInstance(): object {
         $class = $this->getClass();
 
         return new $class('', []);

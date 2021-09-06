@@ -16,7 +16,7 @@ namespace Sonata\UserBundle\Controller;
 use Sonata\UserBundle\Action\CheckLoginAction;
 use Sonata\UserBundle\Action\LoginAction;
 use Sonata\UserBundle\Action\LogoutAction;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -27,7 +27,7 @@ use Symfony\Component\HttpFoundation\Response;
     \E_USER_DEPRECATED
 );
 
-class AdminSecurityController extends Controller
+class AdminSecurityController extends AbstractController
 {
     public function loginAction(Request $request): Response
     {

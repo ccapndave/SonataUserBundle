@@ -17,7 +17,7 @@ use Sonata\UserBundle\Action\CheckEmailAction;
 use Sonata\UserBundle\Action\RequestAction;
 use Sonata\UserBundle\Action\ResetAction;
 use Sonata\UserBundle\Action\SendEmailAction;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\Response;
     \E_USER_DEPRECATED
 );
 
-class AdminResettingController extends Controller
+class AdminResettingController extends AbstractController
 {
     /**
      * @return Response
